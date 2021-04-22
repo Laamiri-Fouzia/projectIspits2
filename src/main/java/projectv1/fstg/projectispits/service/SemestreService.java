@@ -12,7 +12,7 @@ import projectv1.fstg.projectispits.dao.SemestreDao;
 import java.util.List;
 
 @Service
-public class SmestreService {
+public class SemestreService {
     @Autowired
     private SemestreDao semestreDao;
 
