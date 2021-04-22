@@ -7,7 +7,7 @@ import projectv1.fstg.projectispits.bean.Module;
 
 @Repository
 public interface EtatValidationDao extends JpaRepository<EtatValidation,Long> {
-    Module findByCode(String code);
-    Module findByLibelle( String libelle);
+    EtatValidation findByCode(String code);
+    EtatValidation findByLibelle( String libelle);
     int deleteByCode( String code);
 }

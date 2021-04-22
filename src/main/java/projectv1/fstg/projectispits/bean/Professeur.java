@@ -22,6 +22,7 @@ public class Professeur {
     private Date dateEmbauche;
     @JsonFormat(pattern="dd-MM-yyyy")
     private Date dateNaissance;
+    private boolean responsable;
 
     public Long getId() {
         return id;
@@ -78,5 +79,13 @@ public class Professeur {
 
     public void setCodeEmploye(String codeEmploye) {
         this.codeEmploye = codeEmploye;
+    }
+
+    public boolean isResponsable() {
+        return responsable;
+    }
+
+    public void setResponsable(boolean responsable) {
+        this.responsable = responsable;
     }
 }
