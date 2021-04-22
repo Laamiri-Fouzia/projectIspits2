@@ -10,5 +10,5 @@ public interface AdminDao extends JpaRepository<Admin,Long> {
     Admin findByCin( String cin);
     Admin findByCodeEmploye( String codeEmploye);
     List<Admin> findByNomAndPrenom(String nom,String prenon);
-    int deleteByCodeEmploye ( String codeEmploye);
+    int deleteByCodeEmploye( String codeEmploye);
 }

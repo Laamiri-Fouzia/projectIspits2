@@ -20,16 +20,16 @@ public class EtatValidationProvided {
     private EtatValidationService etatValidationService;
 
     @GetMapping("/code/{code}")
-    public EtatValidation findByCode(String code) {
+    public EtatValidation findByCode(@PathVariable  String code) {
         return etatValidationService.findByCode(code);
     }
     @GetMapping("/libelle/{libelle}")
-    public EtatValidation findByLibelle(String libelle) {
+    public EtatValidation findByLibelle(@PathVariable String libelle) {
         return etatValidationService.findByLibelle(libelle);
     }
 
     @DeleteMapping("/code/{code}")
-    public int deleteByCode(String code) {
+    public int deleteByCode(@PathVariable String code) {
         return etatValidationService.deleteByCode(code);
     }
     @GetMapping("/")
