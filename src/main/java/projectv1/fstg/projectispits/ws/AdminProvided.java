@@ -21,7 +21,7 @@ public class AdminProvided {
         return adminService.findByCin(cin);
     }
     @GetMapping("/codeEmploye/{codeEmploye}")
-    public Admin findByCodeEmploye( @PathVariable String codeEmploye) {
+    public Admin findByCodeEmploye(@PathVariable String codeEmploye) {
         return adminService.findByCodeEmploye(codeEmploye);
     }
     @GetMapping("/nom/{nom}/prenon/{prenon}")
@@ -29,7 +29,7 @@ public class AdminProvided {
         return adminService.findByNomAndPrenom(nom, prenon);
     }
 
-    @DeleteMapping("/codeEmploye/{codeEmploye}")
+    @DeleteMapping("/code-employe/{codeEmploye}")
     public int deleteByCodeEmploye( @PathVariable String codeEmploye) {
         return adminService.deleteByCodeEmploye(codeEmploye);
     }
